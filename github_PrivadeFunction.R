@@ -14,7 +14,7 @@ library(RCurl)
 
 ################# Funções ########################
 
-Tutoriais
+# Tutoriais
 
 # https://www.r-bloggers.com/reading-an-r-file-from-github/
 # github_PrivadeFunction("NotNull")
