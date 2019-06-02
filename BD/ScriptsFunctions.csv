@@ -1,0 +1,8 @@
+Script.Id;Function.Id;Script.Name;Function.Name
+1;3;GetMyTracks.R;CleverMove
+1;4;GetMyTracks.R;Extract.GPX
+1;5;GetMyTracks.R;Process.GPXFiles
+2;2;BuscaImoveisBEL.R;get.dropbox.folder
+3;7;BaixaOLX.R;SafeAppend
+3;1;BaixaOLX.R;github_PrivadeFunction
+2;1;BuscaImoveisBEL.R;github_PrivadeFunction

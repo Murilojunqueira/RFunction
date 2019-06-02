@@ -1,0 +1,7 @@
+Function.Id;Package.Id;Function.Name;Package.Name
+1;1;github_PrivadeFunction;devtools
+2;2;get.dropbox.folder;RJSONIO
+3;3;CleverMove;XML
+4;3;Extract.GPX;XML
+7;4;SafeAppend;tidyverse
+7;5;SafeAppend;data.table
