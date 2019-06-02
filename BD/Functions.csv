@@ -1,1 +1,7 @@
-Function.Id;Function.Name;Function.Desc;Function.TypeMajor;Function.TypeMinor;Function.DateCreation;Function.LastUpdate;File.Id
+Function.Id;Function.Name;Function.Desc;Function.DateCreation;Function.LastUpdate;Folder.Id;Folder.Path
+1;github_PrivadeFunction;Carrega uma função direto do diretório do GitHub;"""2019-06-01""";"""2019-06-01""";;
+2;get.dropbox.folder;Retorna o diretório do Dropbox no computador;"""2018-03-15""";"""2018-03-15""";2;Repo/DropboxFunctions/
+3;CleverMove;Função para poder transferir arquivos de forma inteligente. Ela compara dois diretórios e apenas transfere o arquivo caso no diretório destino não tiver o arquivo ou tiver um arquivo menor com o mesmo nome. Caso não transferir o arquivo, deleta ele.;"""2019-05-31""";"""2019-05-31""";3;Repo/FilesFunctions/
+4;Extract.GPX;Extrai informações básicas de um arquivo GPX (Time, Latitude, Longitude, Elevação) e retorna um vetor.;"""2019-05-31""";"""2019-05-31""";4;Repo/GPXFunctions/
+5;Process.GPXFiles;Extrai as informações de um arquivo GPX e transforma em uma lista XML mais simples.;"""2019-05-31""";"""2019-05-31""";4;Repo/GPXFunctions/
+6;NotNull;Transforma valores nulos em NA;"""2019-06-01""";"""2019-06-01""";5;
