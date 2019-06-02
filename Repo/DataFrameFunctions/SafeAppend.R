@@ -4,14 +4,17 @@
 
 # Debug: BaixaOLX.R
 
-# New.Data <- Imoveis.Dataframe
-# FileName <- "E:/Users/Murilo/Dropbox//Ideias, Ensaios e Projetos/2019-05 Busca de Imóveis Belém/Dados/Extracoes/OLX links 2019-06-02.csv"
+# New.Data <- Imoveis.Detalhado.Data
+# FileName <- "E:/Users/Murilo/Dropbox/Ideias, Ensaios e Projetos/2019-05 Busca de Imóveis Belém/Dados/Extracoes/OLX Ofertas 2019-06-02.csv"
 # Output.Folder <- ExtrationFolder
 # Output.Folder <- NULL
 # IdCol = NULL
 
 
 SafeAppend <- function(New.Data, FileName, Output.Folder = NULL, IdCol = NULL) {
+  
+  # Funções dependência
+  github_PrivadeFunction("force_class")
   
   # Se não houve diretório de trabalho, se assume que FileName é o 
   # caminho completo. Caso contrário se controi o caminho
@@ -24,7 +27,11 @@ SafeAppend <- function(New.Data, FileName, Output.Folder = NULL, IdCol = NULL) {
   
   if (file.exists(File.Path)) {
     # Evita problemas de classe
-    ColCass <- map(New.Data, class) %>% as.character()
+    ColCass <- map(New.Data, class) %>% as.character() %>% 
+      gsub("factor", "character", .)
+    
+    ColCass[which(grepl("POSIXct", ColCass))] <- "character"
+    
     
     # Carrega o arquivo
     Old.File <- fread(File.Path, sep = ";", dec = ",",
@@ -32,7 +39,7 @@ SafeAppend <- function(New.Data, FileName, Output.Folder = NULL, IdCol = NULL) {
                       colClasses = ColCass)
     
     # Evita problemas de classe
-    class(New.Data) <- map(Old.File, class) %>% as.character()
+    New.Data <- map(New.Data, force_class, NewClass = "character")
     
     # Se não houve colinas de identificação, se assume que é a primeira coluna de
     # base de dados

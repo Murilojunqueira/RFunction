@@ -3,5 +3,5 @@ Folder.Id;Folder.Path;Folder.Desc
 2;Repo/DropboxFunctions/;Funções relacionadas ao Dropbox
 3;Repo/FilesFunctions/;Funções de manipulação de arquivos
 4;Repo/GPXFunctions/;Funções de GPX (dados de GPS em formato XML)
-5;Repo/MissingHandleFunctions/;Funções para lidar com missing
+5;Repo/MissingErrorHandleFunctions/;Funções para lidar com missing
 6;Repo/DataFrameFunctions/;Funções de banco de dados
