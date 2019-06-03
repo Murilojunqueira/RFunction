@@ -5,3 +5,5 @@ Function.Id;Package.Id;Function.Name;Package.Name
 4;3;Extract.GPX;XML
 7;4;SafeAppend;tidyverse
 7;5;SafeAppend;data.table
+9;6;SafeDate;lubridate
+9;4;SafeDate;tidyverse

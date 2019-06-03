@@ -2,3 +2,4 @@ Script.Id;Script.Name;Script.Desc;Script.DateCreation;Script.DateUpdate;Script.P
 1;GetMyTracks.R;"Script para obter minha localização do app ""MyTracks - GPS Logger""";"""2019-05-30""";"""2019-05-31""";Dropbox/Ideias, Ensaios e Projetos/2019-05 Diário Automatizado/Rotinas R/
 2;BuscaImoveisBEL.R;Script para buscar imóveis em Belém de forma automatizada;"""2019-05-03""";"""2019-06-01""";Dropbox/Ideias, Ensaios e Projetos/2019-05 Busca de Imóveis Belém/Scripts.R/
 3;BaixaOLX.R;Baixa dados da OLX;"""2019-05-03""";"""2019-06-02""";Dropbox/Ideias, Ensaios e Projetos/2019-05 Busca de Imóveis Belém/Scripts.R/
+4;FormataOfertasOLX.R;Converte os dados baixados da OLX em banco de dados;"""2019-06-02""";"""2019-06-02""";Dropbox/Ideias, Ensaios e Projetos/2019-05 Busca de Imóveis Belém/Scripts.R/

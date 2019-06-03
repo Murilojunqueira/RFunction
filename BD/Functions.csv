@@ -6,4 +6,5 @@ Function.Id;Function.Name;Function.Desc;Function.DateCreation;Function.LastUpdat
 5;Process.GPXFiles;Extrai as informações de um arquivo GPX e transforma em uma lista XML mais simples.;"""2019-05-31""";"""2019-05-31""";4;Repo/GPXFunctions/
 6;NotNull;Transforma valores nulos em NA;"""2019-06-01""";"""2019-06-01""";5;Repo/MissingErrorHandleFunctions/
 7;SafeAppend;Anexa linhas a um banco de dados existente evitando repetições. Se o arquivo não existir com menos nome no diretório destino, salva novo arquivo.;"""2019-06-02""";"""2019-06-02""";6;Repo/DataFrameFunctions/
-8;force_class;Função para forçar as classes;"""2019-06-02""";"""2019-06-02""";7;
+8;force_class;Função para forçar as classes;"""2019-06-02""";"""2019-06-02""";5;Repo/MissingErrorHandleFunctions/
+9;SafeDate;Para corrigir datas sem ano. Coloca datas em português para valor legível.;"""2019-06-02""";"""2019-06-02""";5;Repo/MissingErrorHandleFunctions/

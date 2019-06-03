@@ -20,7 +20,7 @@ library(RCurl)
 
 ################# Debug ########################
 
-# function.name <- "NotNull"
+# function.name <- "force_class"
 # github_PrivadeFunction("NotNull")
 # FunctionRepo <- "E:/Users/Murilo/Dropbox/Aplicativos/RFunction/"
 

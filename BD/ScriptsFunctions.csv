@@ -6,3 +6,5 @@ Script.Id;Function.Id;Script.Name;Function.Name
 3;7;BaixaOLX.R;SafeAppend
 3;1;BaixaOLX.R;github_PrivadeFunction
 2;1;BuscaImoveisBEL.R;github_PrivadeFunction
+4;1;FormataOfertasOLX.R;github_PrivadeFunction
+4;9;FormataOfertasOLX.R;SafeDate
