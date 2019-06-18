@@ -5,3 +5,5 @@ Package.Id;Package.Name
 4;tidyverse
 5;data.table
 6;lubridate
+7;stringr
+8;ggmap

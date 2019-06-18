@@ -1,5 +1,5 @@
 Function.Id;Package.Id;Function.Name;Package.Name
-1;1;github_PrivadeFunction;devtools
+1;1;github_PrivateFunction;devtools
 2;2;get.dropbox.folder;RJSONIO
 3;3;CleverMove;XML
 4;3;Extract.GPX;XML
@@ -7,3 +7,6 @@ Function.Id;Package.Id;Function.Name;Package.Name
 7;5;SafeAppend;data.table
 9;6;SafeDate;lubridate
 9;4;SafeDate;tidyverse
+10;7;detectAnyExpr;stringr
+11;4;extractPrefix;tidyverse
+12;8;PontosGoogleMaps;ggmap

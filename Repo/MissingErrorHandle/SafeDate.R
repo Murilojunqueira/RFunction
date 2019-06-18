@@ -6,8 +6,8 @@
 # library(lubridate)
 # x <- "29 Novembro 09:10"
 # x <- "29 Novembro 2018 09:10"
-# x <- Extracao.New$Oferta.DataInsercao[283]
-# x
+# x <- "16/mai 10:08"
+# x <- Extracao.New$Oferta.DataInsercao[1]
 # 
 # SafeDate(x)
 #  
@@ -18,7 +18,7 @@
 
 SafeDate <- function(x) {
   
-  # Encontra a posição dos dois pontos (":")
+  # Encontra a posição dos dois pontos (":") menos quatro casas
   PointsPosition <- gregexpr(":", x)[[1]][1] - 4
   
   # Estrai o que tem 4 casas antes do dois pontos. Se for
@@ -28,12 +28,16 @@ SafeDate <- function(x) {
   # !suppressWarnings(!is.na(as.numeric(testeChar)))
   if (!suppressWarnings(!is.na(as.numeric(testeChar)))) {
     
+    
     # Retira o mês da data
     Mes.x <- x %>% 
+      # Exclui o horário
       substr(1, PointsPosition) %>% 
+      # Exclui o que vem antes do espaço (ex: "28 dezembro" -> "dezembro")
       substr(gregexpr(" ", .)[[1]][1], nchar(.)) %>% 
       trimws(which = "both") %>% 
-      paste0("01-", ., "-2019") %>% 
+      # Coloca data, se for no formato "28 dezembro" ou não, se for "28/dez"
+      paste0(ifelse(gregexpr("/", .)[[1]][1] > 1, "", "01-"), ., "-2019") %>% 
       dmy() %>% 
       month()
     
@@ -45,7 +49,7 @@ SafeDate <- function(x) {
     Output <- paste0(substr(x, 1, PointsPosition), 
                      " ", Ano.x, " ", 
                      substr(x, PointsPosition + 1 , nchar(x))) %>% 
-      # trimws(which = "both") %>% 
+      trimws(which = "both") %>% 
       dmy_hm() %>% 
       as.character()
     

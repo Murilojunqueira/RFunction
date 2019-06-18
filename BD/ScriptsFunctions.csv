@@ -4,7 +4,12 @@ Script.Id;Function.Id;Script.Name;Function.Name
 1;5;GetMyTracks.R;Process.GPXFiles
 2;2;BuscaImoveisBEL.R;get.dropbox.folder
 3;7;BaixaOLX.R;SafeAppend
-3;1;BaixaOLX.R;github_PrivadeFunction
-2;1;BuscaImoveisBEL.R;github_PrivadeFunction
-4;1;FormataOfertasOLX.R;github_PrivadeFunction
+3;1;BaixaOLX.R;github_PrivateFunction
+2;1;BuscaImoveisBEL.R;github_PrivateFunction
+4;1;FormataOfertasOLX.R;github_PrivateFunction
 4;9;FormataOfertasOLX.R;SafeDate
+4;7;FormataOfertasOLX.R;SafeAppend
+5;1;LocalizacaoCondominios.R;github_PrivateFunction
+5;10;LocalizacaoCondominios.R;detectAnyExpr
+5;11;LocalizacaoCondominios.R;extractPrefix
+5;12;LocalizacaoCondominios.R;PontosGoogleMaps

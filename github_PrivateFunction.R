@@ -15,18 +15,18 @@ library(RCurl)
 ################# Tutoriais ########################
 
 # https://www.r-bloggers.com/reading-an-r-file-from-github/
-# github_PrivadeFunction("NotNull")
+# github_PrivateFunction("NotNull")
 
 
 ################# Debug ########################
 
 # function.name <- "force_class"
-# github_PrivadeFunction("NotNull")
+# github_PrivateFunction("NotNull")
 # FunctionRepo <- "E:/Users/Murilo/Dropbox/Aplicativos/RFunction/"
 
 ################# Funções ########################
 
-github_PrivadeFunction <- function(function.name, 
+github_PrivateFunction <- function(function.name, 
                                    FunctionRepo = try(get("FunctionRepo", envir = globalenv()), silent = TRUE)) {
   
   # Checa se existe um repositório de scripts local. Caso contrário, busca do github.

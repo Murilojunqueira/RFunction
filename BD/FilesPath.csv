@@ -1,7 +1,9 @@
-Folder.Id;Folder.Path;Folder.Desc
-1;.;DiretórioRaiz das funções privadas
-2;Repo/DropboxFunctions/;Funções relacionadas ao Dropbox
-3;Repo/FilesFunctions/;Funções de manipulação de arquivos
-4;Repo/GPXFunctions/;Funções de GPX (dados de GPS em formato XML)
-5;Repo/MissingErrorHandleFunctions/;Funções para lidar com missing
-6;Repo/DataFrameFunctions/;Funções de banco de dados
+Folder.Id;Folder.Path;Folder.Desc;Folder.Dep
+1;.;DiretórioRaiz das funções privadas;0
+2;Repo/Dropbox/;Funções relacionadas ao Dropbox;0
+3;Repo/Files/;Funções de manipulação de arquivos;0
+4;Repo/Spatial/GPX/;Funções de GPX (dados de GPS em formato XML);8
+5;Repo/MissingErrorHandle/;Funções para lidar com missing;0
+6;Repo/DataFrame/;Funções de banco de dados;0
+7;Repo/Text/;Funções de texto;0
+8;Repo/Spatial/;Funções Espaciais;0
